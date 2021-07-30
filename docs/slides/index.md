@@ -4,7 +4,7 @@
 
 Essential Training
 
-<div class="btn btn-warning">raybo.org/slides_bootstrap5</div>
+<div class="btn btn-warning">raybo.org/slides_boot5new</div>
 
 <p class="small mt-4"><span class="badge bg-light text-dark me-1 ms-2">&larr; &rarr;</span> navigate
 <span class="badge bg-light text-dark me-1 ms-2">t</span>toolbar
