@@ -8,18 +8,6 @@
     "filename": "01_01",
     "title": "Under the Hood" }
 ,{
-    "filename": "99_01",
-    "title": "Next Steps" }
-,{
-    "filename": "demo",
-    "title": "Opinionated Reveal.js" }
-,{
-    "filename": "slides",
-    "title": "" }
-,{
-    "filename": "03_02",
-    "title": "Bootstrap Icons" }
-,{
     "filename": "01_02",
     "title": "The Grid" }
 ,{
@@ -29,20 +17,17 @@
     "filename": "01_04",
     "title": "Typography" }
 ,{
-    "filename": "02_01",
-    "title": "Tables" }
-,{
-    "filename": "02_02",
-    "title": "Forms" }
-,{
-    "filename": "03_01",
-    "title": "Accordion" }
-,{
     "filename": "01_05",
     "title": "Utilities" }
 ,{
     "filename": "01_06",
     "title": "Helpers" }
+,{
+    "filename": "02_01",
+    "title": "Tables" }
+,{
+    "filename": "02_02",
+    "title": "Forms" }
 ,{
     "filename": "02_03",
     "title": "Regular Components" }
@@ -50,6 +35,21 @@
     "filename": "02_04",
     "title": "Interactive Components" }
 ,{
+    "filename": "03_01",
+    "title": "Accordion" }
+,{
+    "filename": "03_02",
+    "title": "Bootstrap Icons" }
+,{
     "filename": "03_03",
     "title": "Offcanvas Component" }
+,{
+    "filename": "99_01",
+    "title": "Next Steps" }
+,{
+    "filename": "demo",
+    "title": "Opinionated Reveal.js" }
+,{
+    "filename": "slides",
+    "title": "" }
 ]
