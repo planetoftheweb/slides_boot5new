@@ -56,6 +56,8 @@ Reveal.initialize({
   margin: 0,
   minScale: 0,
   maxScale: 4,
+  width: 1200,
+  height: 800,
   display: 'flex',
   history: true,
   disableLayout: false,
