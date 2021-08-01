@@ -296,10 +296,9 @@ $selectionColor: #fff;
 }
 .reveal-viewport p code,
 .reveal-viewport li code {
-  background-color: $gray-200;
+  background-color: $gray-400;
   color: $gray-800;
   font-weight: 400;
-  font-size: 0.9em;
   padding: 0.1em 0.3em;
   margin: 0.2em 0.2em;
 }
@@ -983,7 +982,7 @@ footer.fadeout {
 
 .reveal-viewport.layout-code-list p code,
 .reveal-viewport li code {
-  font-size: clamp(1em, 4vw, 1.1em);
+  font-size: clamp(0.6em, 4vw, 0.9em);
 }
 
 .reveal-viewport.layout-code-list ul li ul li:nth-child(1) code {
@@ -1091,7 +1090,6 @@ footer.fadeout {
   margin: 0;
   margin-top: 0.1em;
   line-height: 110%;
-  font-size: 0.6em;
 }
 .reveal-viewport .card .btn {
   margin-top: 3em;
