@@ -5,3 +5,5 @@ dist-ssr
 *.local
 public
 src/site
+.obsidian
+__note*
