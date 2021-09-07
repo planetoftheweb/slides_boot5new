@@ -2,9 +2,11 @@
 
 # Bootstrap 5
 
-Essential Training
+New Features and Migration
 
-<div class="btn btn-warning">raybo.org/slides_boot5new</div>
+<div class="btn btn-warning my-3">raybo.org/slides_boot5new</div>
+
+<div class="badge">Hit M to choose a slide</div>
 
 <p class="small mt-4"><span class="badge bg-light text-dark me-1 ms-2">&larr; &rarr;</span> navigate
 <span class="badge bg-light text-dark me-1 ms-2">t</span>toolbar

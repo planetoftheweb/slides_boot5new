@@ -160,7 +160,7 @@ Reveal.on('ready', () => {
     return 0
     return b.filename - a.filename
   }).map(item => {
-    if (item.filename !== 'demo' && item.filename !== 'slides' && !item.filename.startsWith('00_') && !item.filename.startsWith('99_')) {
+    if (item.filename !== 'demo' && item.filename !== '__notes' && item.filename !== 'slides' && !item.filename.startsWith('00_') && !item.filename.startsWith('99_')) {
       let container = document.createElement('div')
 
       let menuFile = document.createElement('div')
