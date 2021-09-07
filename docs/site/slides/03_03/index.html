@@ -134,23 +134,102 @@
                       <i class="fab fa-slideshare"></i>
                     </a>
                   </div>
+                
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2 ">
+                    <a class="text-decoration-none  link-secondary  link-primary" href="../../slides/03_04/index.html">
+                      <i class="fas fa-file-alt me-2 lh-1  text-primary "></i>
+                      03_04 Placeholders</a>
+                    <a class=" link-secondary  flex-fill ms-3 text-end" href="../../../?d=03_04&#">
+                      <i class="fab fa-slideshare"></i>
+                    </a>
+                  </div>
+                
+                  <div class="d-flex justify-content-end align-items-right border-bottom p-2 ">
+                    <a class="text-decoration-none  link-secondary  link-primary" href="../../slides/03_05/index.html">
+                      <i class="fas fa-file-alt me-2 lh-1  text-primary "></i>
+                      03_05 Stacks</a>
+                    <a class=" link-secondary  flex-fill ms-3 text-end" href="../../../?d=03_05&#">
+                      <i class="fab fa-slideshare"></i>
+                    </a>
+                  </div>
                 </nav>
           </aside>
         <main class="main col col-md-6 col-lg-8">
           <!-- .slide: data-state="layout-title" class="bg-dark"-->
 <h1 id="offcanvas-component">Offcanvas Component <a class="direct-link" href="#offcanvas-component"> </a></h1>
+<div class="slide-link"><a href="https://go.raybo.org/B5N03_03"><i class="fab fa-slideshare"></i>go.raybo.org/B5N03_03</a></div>
 <blockquote>
 <blockquote></blockquote>
 </blockquote>
-<p>There's a truly unique new component called the offcanvas component, let's take a look at how it works.</p>
+<p>Bootstrap 5 doesn't really introduce a ton of new features, but one of the truly new features in recent version lets you build sidebars into your current project.</p>
 <hr>
 <!-- .slide: data-state="layout-code-list" -->
-<h1 id="offcanvas">Offcanvas <a class="direct-link" href="#offcanvas"> </a></h1>
+<h1 id="trigger">Trigger <a class="direct-link" href="#trigger"> </a></h1>
 <ul>
-<li><code>dropdown-menu-dark</code></li>
-<li><code>&lt;li&gt;</code> dropdowns</li>
+<li><code>button</code> or <code>A</code>
+<ul>
+<li><code>data-bs-target</code></li>
+<li><code>data-bs-toggle=&quot;offcanvas&quot;</code></li>
 </ul>
-<p><a href="https://codepen.io/planetoftheweb/pen/bGWMejm?editors=1000" target="_blank"><code class="code-royal">Try it</code></a></p>
+</li>
+</ul>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
+<p>There are two parts of the Offcanvas container: the offcanvas trigger as well as the offcanvas content. Let's start with the trigger, which shows or hides the content.</p>
+<p>The trigger can be either a button or an anchor tag. If you're using a link, you can simply add an <code>href</code> with the ID of the target, or you can a button an include a <code>data-bs-target</code> attribute with the ID or any CSS selector.</p>
+<p>Although you can trigger these with JavaScript. Adding a <code>data-bs-toggle</code> with the value of <code>offcanvas</code> will initialize the component as well.</p>
+<hr>
+<!-- .slide: data-state="layout-code-list" -->
+<h1 id="offcanvas-container">Offcanvas Container <a class="direct-link" href="#offcanvas-container"> </a></h1>
+<ul>
+<li><code>offcanvas</code>
+<ul>
+<li><code>show</code></li>
+<li><strong><code>offcanvas-POS</code></strong>
+<ul>
+<li>POS: <code>start</code> <code>end</code> <code>top</code> <code>bottom</code></li>
+</ul>
+</li>
+<li><strong><code>offcanvas-TYP</code></strong>
+<ul>
+<li>TYP: <code>header</code> <code>title</code> <code>body</code></li>
+</ul>
+</li>
+<li><code>data-bs-scroll</code> <code>data-bs-backdrop</code></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://codepen.io/planetoftheweb/pen/mdmKpOx?editors=1000" target="_blank"><code class="code-royal">Try it</code></a></p>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
+<p>This is the thing that you want to show. The main container uses an offcanvas class.</p>
+<p>The component will be hidden by default, but you can add the <code>show</code> class to have it show the component when the page is loaded.</p>
+<p>You can control the position of the offcanvas with the <code>offcanvas-POS</code> class. The component will take the full width or height of one of the sides, so this lets you control where it appears.</p>
+<p>There are some classes for the content inside, so you can have a header, title and body. It's also common to see a close button in the header that lets users close the component.</p>
+<p>By default, when the component is showing, the background will have a dark overlay and not scroll, but you can control that with the <code>data-bs-scroll</code> and <code>data-bs-backdrop</code> attributes.</p>
+<p>Notes:</p>
+<ul>
+<li><code>offcanvas-POS: start, end, top, bottom</code></li>
+<li><code>data-bs-scroll=&quot;true&quot;</code></li>
+<li><code>data-bs-backdrop=&quot;false&quot;</code></li>
+</ul>
+<hr>
+<!-- .slide: data-state="layout-code-list" -->
+<h1 id="offcanvas-navbar">Offcanvas Navbar <a class="direct-link" href="#offcanvas-navbar"> </a></h1>
+<ul>
+<li><code>data-bs-toggle=&quot;offcanvas&quot;</code> in <code>navbar-toggler</code></li>
+<li><code>navbar-nav</code> inside <code>offcanvas-body</code></li>
+</ul>
+<p><a href="https://codepen.io/planetoftheweb/pen/JjNmzee?editors=1000" target="_blank"><code class="code-royal">Try it</code></a></p>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
+<p>There is another option for the <code>offcanvas</code> component. You can use it inside a <code>navbar</code> component and it creates an interesting look for the navigation.</p>
+<p>If you already have a <code>navbar</code>, the key is to change the <code>data-bs-toggle</code> property and change it from <code>collapse</code> to <code>offcanvas</code>. The button that usually toggles the <code>navbar-collapse</code> will point to the Offcanvas component instead.</p>
+<p>You also need to add a <code>tabindex=&quot;-1&quot;</code> to the <code>offcanvas</code> component and if you're using a header, which you really should so that it can have a close button, you should also have a <code>aria-labelledby</code> property with an ID of the header.</p>
+<p>Other than that, the <code>navbar-nav</code> part of your navigation goes inside the <code>offcanvas-body</code></p>
 
         </main>
         <aside class="aside aside-supplemental col col-md-3 col-lg-2 d-none d-md-block">
@@ -162,7 +241,13 @@
                     <li><a href="#offcanvas-component">Offcanvas Component  </a>
             		</li>
 
-                    <li><a href="#offcanvas">Offcanvas  </a>
+                    <li><a href="#trigger">Trigger  </a>
+            		</li>
+
+                    <li><a href="#offcanvas-container">Offcanvas Container  </a>
+            		</li>
+
+                    <li><a href="#offcanvas-navbar">Offcanvas Navbar  </a>
             		</li>
                 </ol>
             </div>

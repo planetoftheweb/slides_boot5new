@@ -1,6 +1,6 @@
 [{
     "filename": "00_01",
-    "title": "The Most Popular" }
+    "title": "New Features and Migration" }
 ,{
     "filename": "00_02",
     "title": "Using the Exercises" }
@@ -52,4 +52,10 @@
 ,{
     "filename": "slides",
     "title": "" }
+,{
+    "filename": "03_04",
+    "title": "Placeholders" }
+,{
+    "filename": "03_05",
+    "title": "Stacks" }
 ]
